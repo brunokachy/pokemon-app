@@ -1,0 +1,24 @@
+{
+  "name": "pokemon-app",
+  "version": "1.0.0",
+  "description": "A REST API that accepts a list of Pokemon names and returns the most powerful one",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunokachy/pokemon-app.git"
+  },
+  "author": "Onyedika Okafor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunokachy/pokemon-app/issues"
+  },
+  "homepage": "https://github.com/brunokachy/pokemon-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
