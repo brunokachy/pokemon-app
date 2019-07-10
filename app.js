@@ -1,10 +1,13 @@
 const express = require("express");
+const bodyParser = require('body-parser');
 
 const app = express();
-app.listen(3000, () => {
-    console.log("Server running on port 3000");
-});
+const routes = require('./app/routes/pokemonRoutes');
+const port = process.env.PORT || 3000;
 
-app.get("/url", (req, res, next) => {
-    res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
-});
+app.listen(port);
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+
+app.use('/', routes);
